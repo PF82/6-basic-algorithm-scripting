@@ -8,11 +8,15 @@ Your result must be a string.
 */
 
 function reverseString(str) {
-    return str;
+    let reversedStr = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversedStr += str[i];
+    }
+    return reversedStr;
 }
 
 reverseString("hello");
 
 
-console.log()
+console.log(reverseString("hello"))
 // document.getElementById("demo").innerHTML = "";
