@@ -10,11 +10,16 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 */
 
 function mutation(arr) {
-    return arr;
+    let test = arr[1].toLowerCase();
+    let target = arr[0].toLowerCase();
+    for (let i = 0; i < test.length; i++) {
+        if (target.indexOf(test[i]) < 0) return false;
+    }
+    return true;
 }
 
 mutation(["hello", "hey"]);
 
 
-console.log()
+console.log(mutation(["hello", "hey"]))
 // document.getElementById("demo").innerHTML = "";
