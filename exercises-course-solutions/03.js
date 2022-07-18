@@ -12,11 +12,15 @@ Only integers greater than or equal to zero will be supplied to the function.
 */
 
 function factorialize(num) {
-    return num;
+    let product = 1;
+    for (let i = 2; i <= num; i++) {
+        product *= i;
+    }
+    return product;
 }
 
 factorialize(5);
 
 
-console.log()
+console.log(factorialize(5))
 // document.getElementById("demo").innerHTML = "";
