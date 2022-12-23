@@ -5,15 +5,11 @@ purpose of this challenge, do not use the built-in .repeat() method.
 */
 
 function repeatStringNumTimes(str, num) {
-    let accumulatedStr = "";
-    for (let i = 0; i < num; i++) {
-        accumulatedStr += str;
-    }
-    return accumulatedStr;
+    return str;
 }
 
 repeatStringNumTimes("abc", 3);
 
 
-console.log(repeatStringNumTimes("abc", 3))
+console.log()
 // document.getElementById("demo").innerHTML = "";

@@ -6,21 +6,28 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 */
 
 function largestOfFour(arr) {
+    //create a var to store the results as an array
     const results = [];
+    //create an outer loop to iterate through the outer array; and create a second var to hold the largest 
+    //number and initialise it with the first number of each arr. This must be outside an inner loop so it 
+    //won’t be reassigned until we find a larger number
     for (let i = 0; i < arr.length; i++) {
-        let largestNumber = arr[i][0];
+        let largestNr = arr[i][0];
         for (let j = 1; j < arr[i].length; j++) {
-            if (arr[i][j] > largestNumber) {
-                largestNumber = arr[i][j];
+            if (arr[i][j] > largestNr) {
+                largestNr = arr[i][j];
             }
         }
-        results[i] = largestNumber;
+        results[i] = largestNr
     }
+    //create an inner loop to work with the sub-arrays; and check if the element of the sub array is larger 
+    //than the currently stored largest number. If so, then update the number in the variable with the
+    //assignment operator 
+
+    //assign var and [i] to 2nd var  
+
+    //return 1st var
     return results;
 }
-
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
-
-
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]))
-// document.getElementById("demo").innerHTML = "";
+

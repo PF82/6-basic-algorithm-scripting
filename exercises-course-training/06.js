@@ -7,11 +7,11 @@ like you to use one of the JavaScript substring methods instead.
 */
 
 function confirmEnding(str, target) {
-    return str.slice(str.length - target.length) === target;
+    return str;
 }
 
 confirmEnding("Bastian", "n");
 
 
-console.log(confirmEnding("Bastian", "n"))
+console.log()
 // document.getElementById("demo").innerHTML = "";

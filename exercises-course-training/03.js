@@ -2,7 +2,8 @@
 /*
 Return the factorial of the provided integer.
 
-If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less 
+than or equal to n.
 
 Factorials are often represented with the shorthand notation n!
 
@@ -12,15 +13,15 @@ Only integers greater than or equal to zero will be supplied to the function.
 */
 
 function factorialize(num) {
+    //since the return values for the function will always be greater than or equal to 1, create var 
+    //initialized at one
     let product = 1;
+    //loop through the num; use compound assignment multiplication for var and i
     for (let i = 2; i <= num; i++) {
         product *= i;
     }
+    //return var
     return product;
 }
 
-factorialize(5);
-
-
 console.log(factorialize(5))
-// document.getElementById("demo").innerHTML = "";

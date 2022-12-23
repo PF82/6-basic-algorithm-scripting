@@ -8,12 +8,9 @@ temperature to Fahrenheit.
 */
 
 function convertToF(celsius) {
+  //assign var to 
   let fahrenheit = celsius * (9 / 5) + 32;
   return fahrenheit;
 }
 
-convertToF(30);
-
-
 console.log(convertToF(30))
-// document.getElementById("demo").innerHTML = "";

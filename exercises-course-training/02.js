@@ -8,15 +8,15 @@ Your result must be a string.
 */
 
 function reverseString(str) {
-    let reversedStr = "";
+    //create var and assign it an empty string
+    let reversed = '';
+    //loop through the string and reverse it; and concatenate var with the current character
     for (let i = str.length - 1; i >= 0; i--) {
-        reversedStr += str[i];
+        reversed += str[i];
     }
-    return reversedStr;
+    //return the final value of var
+    return reversed;
 }
 
-reverseString("hello");
-
-
 console.log(reverseString("hello"))
-// document.getElementById("demo").innerHTML = "";
+
