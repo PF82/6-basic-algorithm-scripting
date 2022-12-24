@@ -15,7 +15,7 @@ function reverseString(str) {
         reversed += str[i];
     }
     //return the final value of var
-    return reversed;
+    return reversed
 }
 
 console.log(reverseString("hello"))

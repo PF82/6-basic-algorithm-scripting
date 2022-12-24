@@ -6,11 +6,7 @@ Boolean primitives are true and false.
 */
 
 function booWho(bool) {
-    return bool;
+    return typeof bool === 'boolean';
 }
 
-booWho(null);
-
-
-console.log()
-// document.getElementById("demo").innerHTML = "";
+console.log(booWho(null))

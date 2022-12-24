@@ -21,7 +21,7 @@ function factorialize(num) {
         product *= i;
     }
     //return var
-    return product;
+    return product
 }
 
 console.log(factorialize(5))
